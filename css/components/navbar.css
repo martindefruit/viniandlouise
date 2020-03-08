@@ -1,10 +1,84 @@
-.navbar-lewagon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90px;
-  box-shadow: 5px 0 10px rgba(0,0,0,0.15);
+.navbar-items {
+  padding-left: 0;
 }
-.navbar-lewagon img {
-  width: 50px;
+
+.navbar-items > li {
+  list-style: none;
+  color: white;
+
+}
+
+
+.navbar-items a.active {
+  font-weight: bolder !important;
+}
+
+.navbar-items a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.navbar-items a:hover {
+  opacity: .5;
+  text-decoration: none;
+}
+
+.time-list {
+  padding-left: 0;
+}
+
+.time-list li {
+  color: #A27221;
+  font-weight: lighter;
+}
+
+.time span {
+  color: #A27221;
+  font-weight: bold;
+}
+
+.schloss {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.home-cards {
+  border-bottom: 8px solid #A27221;
+}
+
+.nav-tabs {
+  border-bottom: 0 !important;
+}
+
+.nav-item a{
+  color: #A27221;
+}
+
+.nav-link {
+  padding: 0 !important;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  border: 0 !important;
+  color: #a27220 !important;
+  opacity: .7;
+}
+
+.special {
+  border-left: 2px solid #c7a879;
+}
+
+.nav-tabs .nav-link.active {
+
+  color: #a27221 !important;
+  font-weight: bold;
+  background-color: transparent !important;
+  border-color: #a27220 !important;
+  border-bottom: 3px solid #a27220;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-top: 0 !important;
 }

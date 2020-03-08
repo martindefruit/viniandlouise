@@ -1,14 +1,101 @@
-.card {
+.card-home {
+  height: 500px;
   background-size: cover;
   background-position: center;
-  height: 150px;
-  border-radius: 1px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card-home.left {
+  background: #FFFAF2;
+}
+
+.card-title {
+  color: #A27221;
+}
+
+.location h2 {
+   color: #A27221;
+}
+
+.btn-custom{
+    background: #264743 !important;
+    color: white !important;
+    border-radius: 0 !important;
+}
+
+#fs-frm {
+  max-width: 500px;
+  margin: auto;
+  margin-top: -20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.location p {
+  opacity: .7;
+}
+
+.card-text {
+  color: #A27221;
+  opacity: .6;
+}
+
+.nav-item {
+  padding: 10px 0;
+}
+
+
+.background-color-y {
+  background: #FFFAF2;
+}
+
+.card-home.right {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 22px;
-  color: white;
-  font-weight: bolder;
-  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-home.right > .card-title {
+  color: white !important;
+}
+
+.card-home.right > .card-text {
+  color: white !important;
+}
+
+.rsvp-btn:hover {
+  background: white;
+  color: black !important;
+}
+
+
+.card-home.right > .rsvp-btn  {
+  width: 140px;
+}
+
+.card-home.right > .rsvp-btn:hover  {
+  width: 140px;
+}
+
+.card-home.agenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-lockup {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.avatar {
+      width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    left: 39%;
 }
