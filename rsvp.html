@@ -1,97 +1,106 @@
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Vini & Louise</title>
-    <!-- Need to read device screen width (Bootstrap) -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap & Fontawesome CSS only! -->
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-  </head>
-  <body>
+  <title>Vini & Louisa</title>
+  <!-- Need to read device screen width (Bootstrap) -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap & Fontawesome CSS only! -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+</head>
+<body>
 
-    <!-- Code here -->
+  <!-- Code here -->
   <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon">
     <a class="logo" href="index.html">
       <img height="75" src="images/logo.svg"/>
     </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="p-4 collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav w-100 justify-content-between">
-      <li class="nav-item"><a href="agenda.html">Hochzeistag</a></li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="p-4 collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav w-100 justify-content-between">
+        <li class="nav-item"><a href="agenda.html">Hochzeitstag</a></li>
         <li class="nav-item"><a href="location.html">Location</a></li>
-        <li class="nav-item"><a href="accomodation.html">Unterkunf</a></li>
-        <li class="nav-item"><a href="childcare.html">Kinderbtreuung</a></li>
-        <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a href="accomodation.html">Unterkunft</a></li>
+        <li class="nav-item"><a href="childcare.html">Kinderbetreuung</a></li>
+        <li class="nav-item"><a href="gallery.html">Gallerie</a></li>
         <li class="nav-item"><a href="gift.html">Gift</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a> </li>
+        <li class="nav-item"><a href="contact.html">Kontakt</a> </li>
         <li class="nav-item"><a class="active-p rsvp-btn" href="rsvp.html">RSVP</a></li>
-    </ul>
+      </ul>
+    </div>
   </div>
+
+  <div class="banner-small d-flex justify-content-center align-items-center">
+    <div class="lockup">
+      <br>
+      <br>
+      <br>
+      <h2 class="text-center">RSVP</h2>
+    </div>
+  </div>
+
+  <div data-aos="fade-up" class="container">
+   <form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://formspree.io/mayjgdlg" method="post">
+    <fieldset id="fs-frm-inputs">
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input class="form-control" type="text" name="name" id="full-name" placeholder="First and Last" required="">
+      </div>
+      <div class="form-group">
+        <label for="attending">Will you Attend?</label>
+        <select class="form-control" name="attending" id="attending" required="">
+          <option>Select</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="plus">And with how many adults?</label>
+        <select class="form-control" name="plus" id="plus" required="">
+          <option value="0" selected="">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="plus">And with how many children under 12?</label>
+        <select class="form-control" name="plus" id="plus" required="">
+          <option value="0" selected="">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <input type="hidden" name="_subject" id="email-subject" value="RSVP">
+    </fieldset>
+    <input class="w-100 btn btn-custom" type="submit" value="RSVP">
+  </form>
 </div>
 
-    <div class="banner-small d-flex justify-content-center align-items-center">
-      <div class="lockup">
-        <br>
-             <br>
-                  <br>
-        <h2 class="text-center">RSVP</h2>
-      </div>
-    </div>
 
-    <div data-aos="fade-up" class="container">
-     <form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
-      <fieldset id="fs-frm-inputs">
-        <div class="form-group">
-          <label for="full-name">Full Name</label>
-          <input class="form-control" type="text" name="name" id="full-name" placeholder="First and Last" required="">
-        </div>
-        <div class="form-group">
-          <label for="attending">Will you Attend?</label>
-          <select class="form-control" name="attending" id="attending" required="">
-              <option>Select</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="plus">And with how many guests?</label>
-          <select class="form-control" name="plus" id="plus" required="">
-              <option value="0" selected="">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-          </select>
-        </div>
-        <input type="hidden" name="_subject" id="email-subject" value="RSVP">
-      </fieldset>
-      <input class="w-100 btn btn-custom" type="submit" value="RSVP">
-    </form>
-    </div>
+<div class="text-center p-5 footer justify-content-center">
+  <h2>Louisa & Vini</h2>
+  <p>22.08.2020</p>
+</div>
 
 
-    <div class="text-center p-5 footer justify-content-center">
-      <h2>Louisa & Vini</h2>
-      <p>22.08.2020</p>
-    </div>
-
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <!-- Popper.js (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- Bootstrap JavaScript library-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<!-- Popper.js (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Bootstrap JavaScript library-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
 </html>
 
