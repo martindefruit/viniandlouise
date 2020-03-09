@@ -72,6 +72,7 @@ a, a:hover {
 
 .spot {
   position: absolute;
+  display: block;
 }
 
 .spot.a {
@@ -102,5 +103,9 @@ a, a:hover {
 @media (max-width: 575px) {
   .navbar {
     background-color: #264843;
+  }
+
+  .spot {
+    display: none;
   }
 }
